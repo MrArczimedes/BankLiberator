@@ -1,12 +1,14 @@
 package pl.Bank;
 
 import java.lang.reflect.Field;
+import java.sql.SQLException;
 import java.util.Scanner;
 
 public class Main {
-
-    public static void main(String[] args) {
-        Bank Liberator = new Bank();
+    public static void main(String[] args) throws SQLException {
+        Bazka baza = new Bazka();
+        baza.connectionDB();
+        /*Bank Liberator = new Bank();
         Account account = Liberator;
         OperationTransfer operationTransfer = Liberator;
         Scanner choiceScanner = new Scanner(System.in);
@@ -43,5 +45,6 @@ public class Main {
     {
         Scanner doubleScanner = new Scanner(System.in);
         return doubleScanner.nextDouble();
+    }*/
     }
 }

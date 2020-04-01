@@ -20,7 +20,7 @@ public class BankAccount extends Bank {
     protected ArrayList<Integer> accountNumber = new ArrayList<Integer>(28);
     protected String userName;
     protected String pesel;
-    protected double balance;
+    protected double balance = 10000;
 
     public BankAccount(String userName, String pesel) {
         pesel = veryfication(pesel);
