@@ -17,7 +17,7 @@ public class Bazka {
             String dbUrl = "jdbc:sqlserver://localhost:1433;";
             //String dbUrl = "jdbc:sqlserver://localhost:1433;integratedSecurity=true;";
             String user = "sa";
-            String pass = "POL546071250!!!";
+            String pass = "tajemnica";
             conn = DriverManager.getConnection(dbUrl, user, pass);
             if (conn != null) {
                 DatabaseMetaData dm = (DatabaseMetaData) conn.getMetaData();
